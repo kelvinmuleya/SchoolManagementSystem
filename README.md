@@ -39,3 +39,19 @@ It provides a clean, intuitive interface for day-to-day school management tasks.
 ```bash
 git clone https://github.com/kelvinmuleya/SchoolManagementSystem.git
 cd SchoolManagementSystem
+
+2. Install dependencies
+composer install
+npm install
+npm run dev
+
+3. Copy .env.example to .env and configure your database:
+cp .env.example .env
+php artisan key:generate
+
+4. Run
+Run migrations:
+php artisan migrate
+
+5.Start the local development server:
+php artisan serve
